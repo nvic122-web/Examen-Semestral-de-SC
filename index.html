@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dead Cells – Synergy and Builds Wiki</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="quote"><p>Kill. Die. Learn. Repeat.</p></div>
+
+<aside class="infobox" aria-label="Character summary">
+  <h2>El Beheaded</h2>
+  <img class="portrait" src="Images/Beheaded.webp" alt="El Beheaded portrait">
+  <dl>
+    <div class="row"><dt>HP Incial</dt><dd>100</dd></div>
+    <div class="row"><dt>Movimientos</dt><dd><a href="#">Slam</a>, <a href="#">Roll</a></dd></div>
+  </dl>
+</aside>
+
+<nav class="toc" id="toc" aria-label="Contents">
+  <div class="title">Contenidos <button type="button" id="toc-toggle">hide</button></div>
+  <ol>
+    <li><a href="#story">Story</a></li>
+    <li><a href="#gameplay">Gameplay</a></li>
+    <li><a href="#move-list">Move List</a></li>
+    <li><a href="#mechanics">Universal Mechanics</a></li>
+    <li><a href="#special-moves">Special Moves</a></li>
+    <li><a href="#supers">Super Moves</a></li>
+    <li><a href="#videos">Videos</a></li>
+    <li><a href="#links">External Links</a></li>
+    <li><a href="#players">Players to Watch</a></li>
+  </ol>
+</nav>
+
+<main class="article">
+  <h2 id="story">Story</h2>
+  <p>Write the character's background here. Keep paragraphs short, the way a wiki would.</p>
+  <p>Add a second paragraph for the character's motivation or role in the game's plot.</p>
+
+  <div class="quote right"><p>Optional in-game quote for the character goes here.</p></div>
+
+  <h2 id="gameplay">Gameplay</h2>
+  <p>Describe the character's playstyle: what they do well, what they struggle with, and how a typical match looks.</p>
+  <p>Add a paragraph about the character's unique mechanic, if any.</p>
+
+  <h2 id="move-list">Move List</h2>
+  <div class="table-wrap">
+    <table>
+      <thead><tr><th>Move</th><th>Input</th><th>Startup</th><th>Notes</th></tr></thead>
+      <tbody>
+        <tr><td>Standing Light</td><td>5A</td><td>5f</td><td>Fast poke.</td></tr>
+        <tr><td>Crouching Light</td><td>2A</td><td>5f</td><td>Low-hitting.</td></tr>
+        <tr><td>Reversal</td><td>214C</td><td>15f</td><td>Invincible on startup.</td></tr>
+      </tbody>
+    </table>
+  </div>
+
+  <h2 id="mechanics">Universal Mechanics</h2>
+  <p>List how the game's shared systems work for this character.</p>
+
+  <h2 id="special-moves">Special Moves</h2>
+  <h3>Move Name</h3>
+  <p>What it does, when to use it, and what it combos into.</p>
+
+  <h2 id="supers">Super Moves</h2>
+  <p>Describe each super and its meter cost.</p>
+
+  <h2 id="videos">Videos</h2>
+  <p>Link to guides and match footage.</p>
+
+  <h2 id="links">External Links</h2>
+  <p><a href="#">Community Discord</a> · <a href="#">Official site</a></p>
+
+  <h2 id="players">Players to Watch</h2>
+  <p>Name notable players and where to watch them.</p>
+</main>
+
+<div class="clear"></div>
+<footer>This page was last edited on <span id="edited">date</span>. Content is community-written.</footer>
+
+<script>
+  var toc = document.getElementById('toc');
+  var btn = document.getElementById('toc-toggle');
+  btn.addEventListener('click', function () {
+    var hidden = toc.classList.toggle('collapsed');
+    btn.textContent = hidden ? 'show' : 'hide';
+  });
+  document.getElementById('edited').textContent = new Date(document.lastModified).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+</script>
+</body>
+</html>
